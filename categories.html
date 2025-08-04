@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect - Product Categories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .category-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <nav class="bg-gray-100 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                         <a href="consumer-dashboard.html" class="text-2xl font-bold text-gray-800">AgriConnect</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="consumer-dashboard.html" class="text-gray-600 hover:bg-gray-200 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="categories.html" class="bg-blue-500 text-white px-3 py-2 rounded-md text-sm font-medium">Categories</a>
+                            <a href="my-orders.html" class="text-gray-600 hover:bg-gray-200 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">My Orders</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <a href="index.html" class="ml-4 text-gray-600 hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900">Explore Our Categories</h1>
+            <p class="mt-4 text-lg text-gray-600">Find the freshest products by category.</p>
+        </div>
+
+        <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <a href="#" class="category-card rounded-lg overflow-hidden shadow-lg bg-blue-200">
+                <div class="flex items-center justify-center h-48">
+                    <h2 class="text-3xl font-bold text-blue-800">Vegetables</h2>
+                </div>
+            </a>
+            
+            <a href="#" class="category-card rounded-lg overflow-hidden shadow-lg bg-yellow-200">
+                <div class="flex items-center justify-center h-48">
+                    <h2 class="text-3xl font-bold text-yellow-800">Fruits</h2>
+                </div>
+            </a>
+
+            <a href="#" class="category-card rounded-lg overflow-hidden shadow-lg bg-green-200">
+                <div class="flex items-center justify-center h-48">
+                    <h2 class="text-3xl font-bold text-green-800">Grains</h2>
+                </div>
+            </a>
+            
+            <a href="#" class="category-card rounded-lg overflow-hidden shadow-lg bg-indigo-200">
+                <div class="flex items-center justify-center h-48">
+                    <h2 class="text-3xl font-bold text-indigo-800">Dairy & Eggs</h2>
+                </div>
+            </a>
+            
+            <a href="#" class="category-card rounded-lg overflow-hidden shadow-lg bg-pink-200">
+                <div class="flex items-center justify-center h-48">
+                    <h2 class="text-3xl font-bold text-pink-800">Livestock</h2>
+                </div>
+            </a>
+
+            <a href="#" class="category-card rounded-lg overflow-hidden shadow-lg bg-purple-200">
+                <div class="flex items-center justify-center h-48">
+                    <h2 class="text-3xl font-bold text-purple-800">Farm Tools</h2>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
